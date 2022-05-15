@@ -1,0 +1,59 @@
+.topheader{/*las propiedades width y height no funcionan aqui por que ya estan en el html*/
+box-shadow: 0 4px 5px var(--navbar-shallow-color);/*crea una sombra en esa caja, se describe por los desplazamientos en X e Y, los radios de desenfoque y dispersión, y el color relativos al elemento. */
+position:fixed;/*asi queda fijo el header*/
+background-color: var(--theme-color);
+width: 100%;
+left:0;
+top:0;
+}
+.topnav{
+display: flex;
+justify-content: space-between;
+padding: 10px;
+max-width: 980px;/*muy importante,ancho maximo que va a tener, de ahi para arriba el contenido no cambia se mantiene estatico , cambia antes de los 980px*/
+margin: 0 auto;/*importante ,segun manecillas del reloj*//*lorem4000 para pruebas de scroll*/
+}
+
+/*Logo*/
+.logo{
+display: flex;
+align-items: center;
+font-size: 18px;
+font-weight: 500;
+color :var(--primary-color);
+}
+/*tambien puedo dar estilos a una clase por una etiqueta*/
+.logo img{
+    border-radius: 50px;
+    
+}
+/* Menu */
+.menu{
+display: flex;
+list-style: none;/*para no mostrar ningun marcador en los elementos de la lista*/
+margin: 0;
+padding: 0;
+
+}
+.menu li{
+padding: 0 15px;/* de arriba y abajo 0 px,  e izquierda y derecha 15 px*/
+}
+
+.menu a{
+color: var(--text-color);
+font-size: 18px;
+font-weight: 500;
+line-height: 50px;/*se usa para establecer la distancia entre lineas de texto, a esa altura*/
+text-transform: uppercase;/*Texto en mayuscula */
+}
+
+.open-menu,
+.close-menu{
+display: none;/*para que no se vean los botones*/
+}
+
+@media (max-width: 950px){
+ body{
+     background-color: blue;/*debi quitar la variable ccs del main por que no funcionaba*/
+ }
+}

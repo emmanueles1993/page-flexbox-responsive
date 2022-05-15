@@ -1,0 +1,27 @@
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/align-content*//*esta pagina ayuda de forma visual con el css*/
+/*variables css, estas son llamadas en cualquier lugar dentro y fuera de este archivo  , la ventaja es que podemos cambiar el valor de la variable y en todo lugar que usemos esa variable cambia*/
+:root {
+    --theme-color: white;
+    --primary-color: #124f88;
+    --secundary-color: #F7C331;
+    --text-color-inverse: white;
+    --text-color: black;
+    --navbar-shallow-color: #e5e5e5;
+    --menu-mobile-background-color: #3A4460;
+  }
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} *//*estilos generales para todo los elementos,para normalizar los estilos en todos los navegadores web , podemos usar tambien normalize, en un archivo css o cdn*/
+body{ /*el body va sin . */
+font-family: 'Montserrat', sans-serif;
+/*llamando a la variable*/
+color: var(--text-color); /*para el color del texro*/
+}
+
+a{/*a es para los enlaces*/
+    text-decoration: none; /*quita la decoracion el subrayado*/
+    color: var(--text-color);
+}

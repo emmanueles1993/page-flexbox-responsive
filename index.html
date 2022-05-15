@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning flexbox and css</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img
+            height="50px"
+            width="50px"
+            src="./img/youtube.png"
+            alt="programmer"
+          />
+          <div>
+            yoelvis mulen <br />
+            {code}
+          </div>
+        </a>
+        <button class="open-menu" aria-label="Abrir menu">
+          <img src="./img/hamburger-icon.svg" alt="Abrir menu" />
+        </button>
+        <!--el aria-label se usa para poner una cadena de texto, se convierte en etiqueta de esta -->
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menu">
+            <img src="./img/close-icon.svg" alt="Cerrar menu" />
+          </button>
+          <li><a href="#profile">Perfil</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
