@@ -52,8 +52,54 @@ text-transform: uppercase;/*Texto en mayuscula */
 display: none;/*para que no se vean los botones*/
 }
 
+/*media queries*/
 @media (max-width: 950px){
- body{
-     background-color: blue;/*debi quitar la variable ccs del main por que no funcionaba*/
- }
+ /*body{
+     background-color: blue;/*debi quitar la variable css del main por que no funcionaba, si tiene menos de 950px aplica(0-950), si no no aplica(951-2000), maximo ancho hasta donde aplica, maximo debe llegara a 950 para aplicar
+    }*/
+
+        /* Menu */
+        .menu{
+        flex-direction: column;
+        position: fixed;
+        left: 0; /*para aquellos que tienen una posicion,determina la distancia entre el margen izquierdo del elemento y el borde izquierdo de su bloque contenedor.*/
+        top: 0;/* determina la distancia entre el borde superior del elemento y el borde superior del bloque que lo contiene.*/
+        width: 100%;
+        align-items: center;
+        background-color: var(--menu-mobile-background-color);
+        height: 100%;
+        overflow-y: auto;/*cuando mi contenido este apretado me crea un scroll */
+        opacity: 0;/* 0 es transparente y 1 es que se vea 100% esta es la opacidad, la usamos para cuadra el padding*/
+        pointer-events: none;/*para no darle click a los elementos*/
+        transition: opacity 0.3s;/*muestra un pequeño retardo en aplicarse la opacidad*/
+        }
+
+        .menu li{
+        padding: 0;
+        }
+        
+        .menu a{
+        color: var(--text-color-inverse);
+        line-height: 60px;
+
+        }
+        
+        .open-menu,
+        .close-menu{
+        display: block;/*muestra el elemento como bloque*/
+        }
+
+        .close-menu{
+            align-self: flex-end;
+            border:none;/*quitamos los estilos del boton con none*/
+            background: none;
+            cursor: pointer;/*crea un puntero al estar sobre el elemento*/
+            padding:20px 15px;
+        }
+        .menu_opened{/*creamos un modificador bem*/
+            opacity: 1;
+            pointer-events: all;
+
+
+        }
 }

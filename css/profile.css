@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+.profile-info{
+    margin-bottom: 25px;/*para que este separado de la imagen*/
+}
+.profile-img{
+    width: 80%;/*80% de la pagina*/
+    max-width: 300px;/*para que mi imagen no crezca a mas de 350px*/
+}
+
+.profile-img-section{
+    position: relative;/*no lo entiendo*/
+}
+.profile-img-line{/*linea amarilla*/
+    background-color: var(--secundary-color);
+    height: 15px;
+    position: absolute;/*no lo entiendo y va de la mano con el span de html*/
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+}
+.profile{
+    text-align: center;
+}
+
+.profile-title{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.profile-details{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    max-width: 450px;/*para que los parrafos no tengan mas de 6 o 7 palabras para que no se vuelva ilegible*/
+    margin: 20px auto;/*es lo mismo que margin left y margin rigth auto*/
+}
+
+.profile-btn{
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+    font-size: 20px;
+    padding: 0,5em 1em;/*asi tiene la ventaja de que el padding se ajusta al tmaño de fuente*/
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.profile-btn:hover{
+    filter:brightness(130%);/*con esta pseudoclase al pasar el puntero aumenrta el brillo*/
+}
+
+/*media query*/
+@media (min-width: 950px){/*0-950 no aplica , de 950-2000 aplica, minimo ancho desde donde aplica, minimo debe tener 950px para aplicar*/
+    .profile-info{
+        margin-bottom: 0px;
+    }
+
+    .profile-img{
+        width: 100%;
+        max-width: 350px;
+        /*transform: scaleX(-1);
+    }
+    
+    .profile-img-section{
+        position: relative;
+    }
+
+    .profile-img-line{
+        background-color: var(--secundary-color);
+        height: 15px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    
+    }
+    .profile{
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+    
+    .profile-title{
+        font-size: 35px;
+        font-weight: bold;
+        margin: 0;
+        color: var(--primary-color);
+        font-family: 'Open Sans', sans-serif;
+    
+    }
+    
+    .profile-details{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.3;
+        max-width: 450px;
+        margin: 20px auto;
+    }
+    
+    .profile-btn{
+        background-color: var(--primary-color);
+        color: var(--text-color-inverse);
+        font-size: 20px;
+        padding: 0,5em 1em;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+    
+    .profile-btn:hover{
+        filter:brightness(130%);
+    }
+
+}

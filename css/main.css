@@ -18,7 +18,8 @@
 body{ /*el body va sin . */
 font-family: 'Montserrat', sans-serif;
 /*llamando a la variable*/
-color: var(--text-color); /*para el color del texro*/
+color: var(--text-color); /*para el color del texto*/
+padding-top:  70px;/*esto se hizo por el position fixed, cuando se coloco el texto hola , soy....*/
 }
 
 a{/*a es para los enlaces*/
