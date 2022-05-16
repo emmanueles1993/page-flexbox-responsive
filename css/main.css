@@ -26,3 +26,27 @@ a{/*a es para los enlaces*/
     text-decoration: none; /*quita la decoracion el subrayado*/
     color: var(--text-color);
 }
+
+.horizontal-padding {
+padding-left: 25px;
+padding-right: 25px;
+}
+
+.vertical-padding {
+padding-top: 25px;
+padding-bottom: 25px;
+}
+
+/*media query*/
+@media(min-width:950px) {
+.horizontal-padding {
+ padding-left: 70px;
+ padding-right: 70px;
+ }
+        
+.vertical-padding {
+padding-top: 70px;
+padding-bottom: 70px;
+}
+          
+}
